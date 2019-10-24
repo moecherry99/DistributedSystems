@@ -1,1 +1,8 @@
-21st Oct started Github Repository
+21st October
+-Started Github Repository
+
+24th October
+-Got helper code for Salting passwords
+-Created basic main method to create a salted and hashed password
+-Passwords are validated to see which is correct when re-validating password
+
