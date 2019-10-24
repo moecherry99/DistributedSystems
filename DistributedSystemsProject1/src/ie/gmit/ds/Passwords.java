@@ -115,5 +115,7 @@ public static void main(String[] args) {
     String newRandomPassword = generateRandomPassword(10);
     pwValidation = isExpectedPassword(newRandomPassword.toCharArray(), salt, hashedPassword);
     System.out.println("New password: " + pwValidation);
+	
+    /* To do - Create a user input for password salting instead of auto generating */
 }
 }
