@@ -7,6 +7,7 @@ import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 // Helper code
 /**
@@ -95,27 +96,40 @@ public class Passwords{
 public static void main(String[] args) {
 	
     boolean pwValidation;
+    
+    Scanner uID = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter ID: ");
+    int userID = uID.nextInt();
+    System.out.println("ID: "+ userID);
+    
+    Scanner pw = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter password : ");
+
+    String passwordInput = pw.nextLine();  // Read user input
+    System.out.println("Typed password: " + passwordInput);
+    
     // Generates a password
     String randomPassword = generateRandomPassword(6);
     System.out.println("Random Password: " + randomPassword);
+    
     
     // Salting password
     byte[] salt = getNextSalt();
     System.out.println("Salted code: " + salt);
     
     // Hash password
-    byte[] hashedPassword = hash(randomPassword.toCharArray(), salt);
+    byte[] hashedPassword = hash(passwordInput.toCharArray(), salt);
     System.out.println("Hashed code: " + hashedPassword);
 
-    // Check old
-    pwValidation = isExpectedPassword(randomPassword.toCharArray(), salt, hashedPassword);
-    System.out.println("Old password: " + pwValidation);
+    // Checks typed password
+    pwValidation = isExpectedPassword(passwordInput.toCharArray(), salt, hashedPassword);
+    System.out.println("Typed password: " + pwValidation);
     
-    // Check new
+    // Checks new password
     String newRandomPassword = generateRandomPassword(10);
     pwValidation = isExpectedPassword(newRandomPassword.toCharArray(), salt, hashedPassword);
-    System.out.println("New password: " + pwValidation);
-	
+    System.out.println("Random generated password: " + pwValidation);
+    
     /* To do - Create a user input for password salting instead of auto generating */
 }
 }
