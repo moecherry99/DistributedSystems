@@ -9,3 +9,9 @@
 26th October
 -Added user input for the user ID and the password for the user. 
 -New hash and salt for typed password and a new random password are added.
+
+30th October
+-adjusted the user input interface
+
+1st November
+-adding gRPC Client to project
