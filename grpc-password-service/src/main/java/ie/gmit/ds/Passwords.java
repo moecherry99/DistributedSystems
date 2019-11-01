@@ -8,7 +8,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.util.Arrays;
 import java.util.Random;
 
-// Adapted Utility class from https://gist.github.com/john-french/9c94d88f34b2a4ccbe55af6afb083674
+// Reference : https://gist.github.com/john-french/9c94d88f34b2a4ccbe55af6afb083674
 
 /**
  * A utility class to hash passwords and check passwords vs hashed values. It uses a combination of hashing and unique
