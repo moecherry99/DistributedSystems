@@ -5,3 +5,6 @@ https://wiki.eclipse.org/Tutorial:_Using_Google_RPC/ProtocolBuffers_for_Remote_S
 
 Password Cryptography
 https://gist.github.com/john-french/9c94d88f34b2a4ccbe55af6afb083674
+
+GRPC helper code 
+https://github.com/john-french/distributed-systems-labs/tree/master/grpc-async-inventory
