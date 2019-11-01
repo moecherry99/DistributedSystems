@@ -16,3 +16,7 @@ There is a simple Server side application, with a Client connecting to it. There
 
 4. The password will be automatically hashed and salted. User validation has been applied if password input on second try is false.
 
+## Jar instructions
+
+Change to directory up until \ds and run java -jar PasswordServer1.jar 
+
