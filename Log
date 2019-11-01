@@ -17,5 +17,7 @@
 -adding gRPC Client to project
 -reworking files that have been uploaded as server does not work currently (17:36)
 -files reworked and gRPC wrapper applied to main project. Reworked most of project.
+-Server and Client working with validation for user input (user id and password) (21:03)
+-Cleared up old GitHub files that were unusued from previous two weeks development stages.(21:12)
 
--Server and Client working with validation for user input (user id and password)
+
