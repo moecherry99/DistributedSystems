@@ -6,7 +6,7 @@ Passwords must be stored in a proper encoding method. This project is to hash an
 
 There is a simple Server side application, with a Client connecting to it. There is a Passwords java class for cryptography, and a PasswordServiceImpl class.
 
-## Instructions for Part 1
+### Instructions for Part 1
 
 1. Build the project using Maven in Eclipse.
 
@@ -16,7 +16,7 @@ There is a simple Server side application, with a Client connecting to it. There
 
 4. The password will be automatically hashed and salted. User validation has been applied if password input on second try is false.
 
-## Jar instructions
+### Jar instructions
 
 Change to directory up until \ds and run java -jar PasswordServer1.jar 
 
