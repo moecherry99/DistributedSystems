@@ -40,5 +40,10 @@ https://github.com/john-french/distributed-systems-labs/tree/master/grpc-async-i
 
 The second part of the project is to design a REST API for a User Account Service using OpenAPI and SwaggerHub. The User Account Service must contain an API in Java that is implemented using the Dropwizard microservice framework.
 
-https://www.sumologic.com/blog/dropwizard-java-microservices/ -> Dropwizard microservice framework reference link.
+### References for part 2
+Dropwizard microservice framework reference link.
+https://www.sumologic.com/blog/dropwizard-java-microservices/
+
+Basic API creation on swaggerhub
+https://swagger.io/blog/api-development/how-to-build-an-api/ 
 
