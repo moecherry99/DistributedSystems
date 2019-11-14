@@ -1,4 +1,4 @@
-# GRPC Project Distributed Systems
+# GRPC Project Distributed Systems Part 1
 
 This project is to create interprocess communication protocols between distributed systems. It is to create a password service between interconnected services. The project is done using gRPC methods.
 
@@ -19,4 +19,24 @@ There is a simple Server side application, with a Client connecting to it. There
 ## Jar instructions
 
 Change to directory up until \ds and run java -jar PasswordServer1.jar 
+
+### References for part 1
+
+GRPC basic setup of client and server
+https://www.grpc.io/docs/tutorials/basic/java/
+
+https://wiki.eclipse.org/Tutorial:_Using_Google_RPC/ProtocolBuffers_for_Remote_Services
+
+Password Cryptography
+https://gist.github.com/john-french/9c94d88f34b2a4ccbe55af6afb083674
+
+GRPC helper code 
+https://github.com/john-french/distributed-systems-labs/tree/master/grpc-async-inventory
+
+
+# GRPC Project Distributed Systems Part 2
+
+The second part of the project is to design a REST API for a User Account Service using OpenAPI and SwaggerHub. The User Account Service must contain an API in Java that is implemented using the Dropwizard microservice framework.
+
+https://www.sumologic.com/blog/dropwizard-java-microservices/ -> Dropwizard microservice framework reference link.
 
