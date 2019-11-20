@@ -1,3 +1,5 @@
+References Part 1
+
 GRPC basic setup of client and server
 https://www.grpc.io/docs/tutorials/basic/java/
 
@@ -8,3 +10,8 @@ https://gist.github.com/john-french/9c94d88f34b2a4ccbe55af6afb083674
 
 GRPC helper code 
 https://github.com/john-french/distributed-systems-labs/tree/master/grpc-async-inventory
+
+References Part 2
+
+Basic Setup of Dropwizard
+https://howtodoinjava.com/dropwizard/tutorial-and-hello-world-example/
