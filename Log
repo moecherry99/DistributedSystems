@@ -34,4 +34,11 @@
 
 23rd-25th November
 -Researching ways on doing (get)/put/post methods for API.
+-Re-uploaded files with correct variable names (mostly).
+
+---------- TO DO -----------
+-Put/Post/Delete methods
+-hashed password working
+-error handling
+
 
