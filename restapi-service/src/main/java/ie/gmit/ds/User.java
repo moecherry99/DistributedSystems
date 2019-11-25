@@ -4,40 +4,45 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class User {
 
-    private String userId;
-    private String artistName;
-    private String artistGenre;
-    private int albumsRecorded;
+	// variables
+    private int userId;
+    private String userName;
+    private String email;
+    private String pw;
 
 
     public User() {
-        // Needed for Jackson deserialisation
+        // Jackson deserialisation
     }
 
-    public User(String userId, String artistName, String artistGenre, int albumsRecorded) {
+    // constructor
+    public User(int userId, String userName, String email, String pw) {
         this.userId = userId;
-        this.artistName = artistName;
-        this.artistGenre = artistGenre;
-        this.albumsRecorded = albumsRecorded;
+        this.userName = userName;
+        this.email = email;
+        this.pw = pw;
     }
 
-    @JsonProperty
-    public String getArtistName() {
-        return artistName;
-    }
+    // getters and setters
+    
 
     @JsonProperty
-    public String getArtistGenre() {
-        return artistGenre;
-    }
+    public String getPw() {
+        return pw;
+    }//pw
 
     @JsonProperty
-    public int getAlbumsRecorded() {
-        return albumsRecorded;
-    }
+    public String getEmail() {
+        return email;
+    }//email
 
     @JsonProperty
-    public String getUserId() {
+    public String getUserName() {
+        return userName;
+    }//email
+
+    @JsonProperty
+    public int getUserId() {
         return userId;
-    }
+    }//email
 }

@@ -10,11 +10,11 @@ import java.util.List;
 @Path("/users")
 @Produces(MediaType.APPLICATION_JSON)
 public class UserApiResource {
-    List<User> artists = Arrays.asList(new User("1", "The GZA", "HipHop", 2));
+    List<User> users = Arrays.asList(new User(001, "Joe", "Joe@Joemail.com", "Joemail1"));
 
 
     @GET
     public List<User> getArtists() {
-        return artists;
+        return users;
     }
 }
