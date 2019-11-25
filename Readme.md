@@ -42,7 +42,13 @@ The second part of the project is to design a REST API for a User Account Servic
 
 ### Instructions for part 2
 
-Temporary.
+1. Build the Maven project in a terminal by using "mvn package".
+
+2. Run program with java -jar target\artist-api-dropwizard-soln-1.0-SNAPSHOT.jar server userApiConfig.yaml.
+
+3. Open up localhost:9000/users to view Json data.
+
+4. (To be edited).
 
 ### References for part 2
 Dropwizard microservice framework reference link
