@@ -70,5 +70,8 @@ https://app.swaggerhub.com/apis/AlexCherry/ProjectApi/3.0.0#/
 Api helper lab, created in swaggerhub/OpenAPI
 https://github.com/john-french/distributed-systems-labs/tree/master/openAPI
 
+OpenApi swaggerhub tutorial
+https://app.swaggerhub.com/help/tutorials/openapi-3-tutorial
+
 
 
