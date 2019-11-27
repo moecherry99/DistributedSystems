@@ -45,7 +45,8 @@
 -ReadMe updated with appropriate instructions for running the application.
 -All User variables updated on project and uploaded.
 
-27th November
+27th November (Mainly issues)
 -Having trouble running the old grpc-password-service, working on fixing to try and co-operate with part 2.
+-New file structure for part 2 of project, not working as can't link original part 1 with part 2. Commented out UserClient for now.
 
 
