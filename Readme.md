@@ -63,3 +63,7 @@ https://swagger.io/blog/api-development/how-to-build-an-api/
 Dropwizard setup helper code
 https://github.com/john-french/artistAPI-dropwizard-soln
 
+### Swaggerhub link
+Api made, not linked to project.
+https://app.swaggerhub.com/apis/AlexCherry/ProjectApi/3.0.0#/
+
