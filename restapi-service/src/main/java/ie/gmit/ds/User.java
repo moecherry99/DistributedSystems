@@ -24,8 +24,6 @@ public class User {
     }
 
     // getters and setters
-    
-
     @JsonProperty
     public String getPw() {
         return pw;
