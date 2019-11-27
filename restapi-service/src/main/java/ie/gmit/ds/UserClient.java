@@ -24,13 +24,14 @@ public class UserClient {
 	private final passwordServiceBlockingStub syncPasswordService;
 	private final passwordServiceStub asyncPasswordService;
 	private int userId;
-	private String userPassword;
+	
+	private String userPw;
 	private ByteString hashedPassword;
 	private ByteString salt;
 	Scanner in = new Scanner(System.in);
 
 	public void getUserInput() {
-		System.out.println("Enter ID:");
+		System.out.println("Enter User ID:");
 		userId = in.nextInt();
 		System.out.println("Enter Password:");
 		userPassword = in.next();
@@ -62,8 +63,8 @@ public class UserClient {
 	}
 
 	public void hashPassword() {
-		logger.info("User ID: " + userId + "\nPassword: " + userPassword);
-		Hash newItem = Hash.newBuilder().setUserId(userId).setPassword(userPassword).build();
+		logger.info("User ID: " + userId + "\nPassword: " + userPw);
+		Hash newItem = Hash.newBuilder().setUserId(userId).setPw(userPw).build();
 		HashResponse hashItem;
 		try {
 			hashItem = syncPasswordService.hash(newItem);
@@ -71,7 +72,7 @@ public class UserClient {
 			salt=hashItem.getSalt();
 			logger.info(hashItem.toString());
 		} catch (StatusRuntimeException ex) {
-			logger.log(Level.WARNING, "Failed:{0}", ex.getStatus());
+			logger.log(Level.WARNING, "RPC Failed:{0}", ex.getStatus());
 			// return
 		}
 	}
@@ -82,15 +83,15 @@ public class UserClient {
 			@Override
 			public void onNext(BoolValue value) {
 				if (value.getValue()) {
-					logger.info("Correct Values");
+					logger.info("Login validation successful");
 				} else {
-					logger.info("Username or Password is incorrect");
+					logger.info("User ID or PW is incorrect");
 				}
 			}
 
 			@Override
 			public void onError(Throwable t) {
-				System.out.println("An Error has occurred.. " + t.getLocalizedMessage());
+				System.out.println("Error! " + t.getLocalizedMessage());
 			}
 
 			@Override
