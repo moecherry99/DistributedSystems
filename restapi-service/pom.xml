@@ -19,6 +19,12 @@
             <artifactId>dropwizard-core</artifactId>
             <version>${dropwizard.version}</version>
         </dependency>
+        <dependency>
+			<groupId>io.grpc</groupId>
+			<artifactId>grpc-netty-shaded</artifactId>
+			<version>1.23.0</version>
+			<scope>runtime</scope>
+		</dependency>
     </dependencies>
 
     <build>
