@@ -1,4 +1,4 @@
-/*package ie.gmit.ds;
+package ie.gmit.ds;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -21,20 +21,20 @@ public class UserClient {
 
 	private static final Logger logger = Logger.getLogger(UserClient.class.getName());
 	private final ManagedChannel channel;
-	private final passwordServiceBlockingStub syncPasswordService;
-	private final passwordServiceStub asyncPasswordService;
-	private int userId;
+	private final PasswordServiceBlockingStub syncPasswordService;
+	private final PasswordServiceStub asyncPasswordService;
 	
-	private String userPw;
+	private int userId;	
+	private String password;
 	private ByteString hashedPassword;
 	private ByteString salt;
-	Scanner in = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
 
 	public void getUserInput() {
 		System.out.println("Enter User ID:");
-		userId = in.nextInt();
+		userId = sc.nextInt();
 		System.out.println("Enter Password:");
-		userPassword = in.next();
+		password = sc.next();
 	}
 
 	public static void main(String[] args) throws Exception {
@@ -63,8 +63,8 @@ public class UserClient {
 	}
 
 	public void hashPassword() {
-		logger.info("User ID: " + userId + "\nPassword: " + userPw);
-		Hash newItem = Hash.newBuilder().setUserId(userId).setPw(userPw).build();
+		logger.info("User ID: " + userId + "\nPassword: " + password);
+		Hash newItem = Hash.newBuilder().setUserId(userId).setPw(password).build();
 		HashResponse hashItem;
 		try {
 			hashItem = syncPasswordService.hash(newItem);
@@ -101,7 +101,7 @@ public class UserClient {
 		};
 		try { 
 			logger.info("requesting validation");
-			asyncPasswordService.validate(Validate.newBuilder().setPassword(userPassword)
+			asyncPasswordService.validate(Validate.newBuilder().setPassword(password)
 					.setHashedPassword(hashedPassword).setSalt(salt).build(), responseObserver);
 			logger.info("returning validation");
 		} catch (StatusRuntimeException ex) {
@@ -110,4 +110,3 @@ public class UserClient {
 		}
 	}
 }
-*/
