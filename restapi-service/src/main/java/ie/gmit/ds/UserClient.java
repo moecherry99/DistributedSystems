@@ -1,4 +1,4 @@
-package ie.gmit.ds;
+/*package ie.gmit.ds;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -110,3 +110,5 @@ public class UserClient {
 		}
 	}
 }
+
+*/
