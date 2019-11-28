@@ -48,8 +48,6 @@ The second part of the project is to design a REST API for a User Account Servic
 
 3. Open up localhost:9000/users to view Json data.
 
-4. (To be edited).
-
 ### References for part 2
 Dropwizard microservice framework reference link
 https://www.sumologic.com/blog/dropwizard-java-microservices/
@@ -73,5 +71,10 @@ https://github.com/john-french/distributed-systems-labs/tree/master/openAPI
 OpenApi swaggerhub tutorial
 https://app.swaggerhub.com/help/tutorials/openapi-3-tutorial
 
+### Issues with part 1 and 2
+Part 1
+1. Can't seem to get PasswordClient to run anymore (this was after submission) but it was working before submission and recognised inputs. Could be due to a wrong command being used in the terminal.
 
+Part 2
+1. UserClient does not work, could not get to compile for some reason. Most code seems correct, mainly used as fillers just to show that the work is done and I know how it operates. Pom file may have errors causing this to not work? 
 
