@@ -54,4 +54,9 @@
 28th November
 -Uncomplicating file structure to try and get client connecting to server (part 1 to part 2)
 
+ISSUES
+-Old project does not seem to be working (problems with pom file?) outdated imports (io.grpc). Maybe works with another command?
+-Can't get part 2 working properly, does not allow user to log in to it as UserClient can not run. JSON data can be viewed through terminal however.
+
+
 
