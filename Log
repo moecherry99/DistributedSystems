@@ -51,4 +51,7 @@
 
 -UserClient variables have been updated with correct names as PasswordClient and other variables as it is not working currently.
 
+28th November
+-Uncomplicating file structure to try and get client connecting to server (part 1 to part 2)
+
 
