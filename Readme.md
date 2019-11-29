@@ -48,6 +48,8 @@ The second part of the project is to design a REST API for a User Account Servic
 
 3. Open up localhost:9000/users to view Json data.
 
+4. If the second part of the project was working correctly, you would run the PasswordClient after the second parts jar has been running and log in correctly, view users, delete users by Id, update users etc. and it would link to the SwaggerHub OpenAPI.
+
 ### References for part 2
 Dropwizard microservice framework reference link
 https://www.sumologic.com/blog/dropwizard-java-microservices/
