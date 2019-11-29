@@ -13,5 +13,17 @@ https://github.com/john-french/distributed-systems-labs/tree/master/grpc-async-i
 
 References Part 2
 
-Basic Setup of Dropwizard
-https://howtodoinjava.com/dropwizard/tutorial-and-hello-world-example/
+Dropwizard microservice framework reference link https://www.sumologic.com/blog/dropwizard-java-microservices/
+
+Basic Dropwizard setup https://howtodoinjava.com/dropwizard/tutorial-and-hello-world-example/
+
+Basic API creation on swaggerhub https://swagger.io/blog/api-development/how-to-build-an-api/
+
+Dropwizard setup helper code https://github.com/john-french/artistAPI-dropwizard-soln
+
+Swaggerhub and OpenApi helpers and links
+Api made, not linked to project. https://app.swaggerhub.com/apis/AlexCherry/ProjectApi/3.0.0#/
+
+Api helper lab, created in swaggerhub/OpenAPI https://github.com/john-french/distributed-systems-labs/tree/master/openAPI
+
+OpenApi swaggerhub tutorial https://app.swaggerhub.com/help/tutorials/openapi-3-tutorial
