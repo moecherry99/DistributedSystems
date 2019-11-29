@@ -1,5 +1,6 @@
 ie\gmit\ds\UserApiApplication.class
 ie\gmit\ds\UserApiResource.class
+ie\gmit\ds\UserLogin.class
 ie\gmit\ds\UserHealthCheck.class
 ie\gmit\ds\UserApiConfig.class
 ie\gmit\ds\User.class
